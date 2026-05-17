@@ -1,0 +1,27 @@
+{
+  "name": "ledja-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Ledja — Stellar-powered invoicing, payroll and expense management",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "ledja",
+    "sdk",
+    "invoicing",
+    "payroll"
+  ],
+  "author": "Ledjja-hq",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
