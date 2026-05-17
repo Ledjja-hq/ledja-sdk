@@ -1,0 +1,7 @@
+# CI workflow — see issue #21 for full implementation
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
