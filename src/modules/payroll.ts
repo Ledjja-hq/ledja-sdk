@@ -1,2 +1,9 @@
-// PayrollModule — wraps the ledja-contracts/payroll Soroban contract
-export class PayrollModule {}
+export class PayrollModule {
+  private readonly rpcUrl: string;
+  private readonly contractId: string;
+
+  constructor(rpcUrl: string, contractId: string) {
+    this.rpcUrl = rpcUrl;
+    this.contractId = contractId;
+  }
+}
