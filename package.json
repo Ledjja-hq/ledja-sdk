@@ -20,13 +20,6 @@
   ],
   "author": "Ledjja-hq",
   "license": "MIT",
-  "dependencies": {
-    "@stellar/stellar-sdk": "15.1.0"
-  },
-  "devDependencies": {
-    "@types/jest": "30.0.0",
-    "jest": "30.4.2",
-    "ts-jest": "29.4.9",
-    "typescript": "6.0.3"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
