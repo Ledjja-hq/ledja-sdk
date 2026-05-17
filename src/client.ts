@@ -1,22 +1,18 @@
-import { SorobanRpc } from '@stellar/stellar-sdk';
+import { Keypair } from '@stellar/stellar-sdk';
 
-export interface LedjaConfig {
-  network: 'testnet' | 'mainnet';
-  rpcUrl?: string;
+export type Network = 'testnet' | 'mainnet';
+
+export interface LedjaClientConfig {
+  network: Network;
+  keypair: Keypair;
 }
 
-const DEFAULT_RPC: Record<LedjaConfig['network'], string> = {
-  testnet: 'https://soroban-testnet.stellar.org',
-  mainnet: 'https://soroban-rpc.mainnet.stellar.gateway.fm',
-};
-
 export class LedjaClient {
-  readonly rpc: SorobanRpc.Server;
-  readonly network: LedjaConfig['network'];
+  public readonly network: Network;
+  private readonly keypair: Keypair;
 
-  constructor(config: LedjaConfig) {
+  constructor(config: LedjaClientConfig) {
     this.network = config.network;
-    const rpcUrl = config.rpcUrl ?? DEFAULT_RPC[config.network];
-    this.rpc = new SorobanRpc.Server(rpcUrl);
+    this.keypair = config.keypair;
   }
 }

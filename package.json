@@ -20,6 +20,10 @@
   ],
   "author": "Ledjja-hq",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "@stellar/stellar-sdk": "13.1.0"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5"
+  }
 }
