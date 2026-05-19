@@ -1,0 +1,1 @@
+{"version":3,"file":"payroll.d.ts","sourceRoot":"","sources":["../../src/modules/payroll.ts"],"names":[],"mappings":"AAAA,qBAAa,aAAa;IACxB,OAAO,CAAC,QAAQ,CAAC,MAAM,CAAS;IAChC,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAS;gBAExB,MAAM,EAAE,MAAM,EAAE,UAAU,EAAE,MAAM;CAI/C"}
